@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "9c5eaba91166000d6f19047b0658ee95"
+name = "PackPro"
+handle = "packpro"
+application_url = "https://ipod-fuel-jets-museum.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "jewellrywear.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_orders,write_orders"
+
+[auth]
+redirect_urls = [
+  "https://ipod-fuel-jets-museum.trycloudflare.com/auth/callback",
+  "https://ipod-fuel-jets-museum.trycloudflare.com/auth/shopify/callback",
+  "https://ipod-fuel-jets-museum.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
